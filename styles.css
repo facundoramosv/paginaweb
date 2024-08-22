@@ -1,0 +1,145 @@
+/* Estilos generales */
+body {
+    font-family: 'Lato', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    font-family: 'Playfair Display', serif;
+}
+
+header .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 3em;
+    font-weight: 700;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+header p {
+    margin-top: 10px;
+    font-size: 1.4em;
+    animation: fadeIn 2s ease-in-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+section#servicios {
+    padding: 60px 20px;
+    background-color: #fff;
+    border-top: 4px solid #1a1a1a;
+}
+
+section#servicios .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h2 {
+    color: #1a1a1a;
+    font-family: 'Playfair Display', serif;
+    font-size: 2.4em;
+    margin-bottom: 30px;
+}
+
+.service-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.service-item {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    animation: slideIn 1s ease-out;
+}
+
+@keyframes slideIn {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.service-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.service-item h3 {
+    font-size: 1.6em;
+    color: #1a1a1a;
+    margin-bottom: 15px;
+}
+
+.ver-mas {
+    display: inline-block;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: background-color 0.3s;
+}
+
+.ver-mas:hover {
+    background-color: #1a1a1a;
+}
+
+.info-adicional {
+    font-size: 0.9em;
+    color: #666;
+    margin-top: 10px;
+}
+
+section#contacto {
+    padding: 20px;
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+}
+
+.contacto-info {
+    font-size: 1em;
+    margin: 0;
+}
+
+.contacto-info a {
+    color: #00bcd4;
+    text-decoration: none;
+}
+
+.contacto-info a:hover {
+    text-decoration: underline;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
